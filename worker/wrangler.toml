@@ -1,0 +1,11 @@
+name = "apply-radar-email-router"
+main = "index.ts"
+compatibility_date = "2026-10-18"
+
+[vars]
+APP_BASE_URL = "https://your-app.example.com"
+
+[triggers]
+crons = ["0 9 * * *"]
+
+# Set secrets with: npx wrangler secret put WEBHOOK_SECRET and CRON_SECRET
